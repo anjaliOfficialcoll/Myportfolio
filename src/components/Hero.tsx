@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
             {/* Resume button — opens Google Drive link in a new tab */}
             <div className="flex items-center gap-4">
               <a
-                href="https://drive.google.com/file/d/1_v9pshS7lC9cMcmRyWV2RfUNa_gz6Ylw/view?usp=sharing"
+                href="https://drive.google.com/file/d/1kcw1VhXP4XIvZQTvwt-OpxfwAvp5F1ja/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#1F1F1F] text-[#F5EFE7] px-5 py-3 rounded-full font-semibold shadow hover:bg-[#2a2a2a] transition-colors"
