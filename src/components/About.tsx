@@ -10,12 +10,12 @@ const akProfessionalsFallback = 'https://images.pexels.com/photos/230544/pexels-
 const About = () => {
   const [imgSrc, setImgSrc] = useState(selfie3);
   const skills = [
-    { icon: Code, name: 'Frontend Development', description: 'React, TypeScript, Next.js' },
-    { icon: Server, name: 'Backend Development', description: 'Node.js, Python, Express' },
-    { icon: Database, name: 'Database Design', description: 'PostgreSQL, MongoDB' },
-    { icon: Palette, name: 'UI/UX Design', description: 'Figma, Adobe Creative Suite' },
-    { icon: Smartphone, name: 'Mobile Development', description: 'React Native, Flutter' },
-    { icon: Globe, name: 'Cloud & DevOps', description: 'AWS, Docker, CI/CD' },
+    { icon: Code, name: 'Programming Languages', description: 'Python, Java, C++, JavaScript' },
+    { icon: Globe, name: 'Web Development', description: 'HTML5, CSS3, Bootstrap, React.js, TypeScript, Tailwind CSS' },
+    { icon: Server, name: 'Java Technologies', description: 'Spring Boot, MVC, JDBC' },
+    { icon: Palette, name: 'AI/ML', description: 'YOLOv8, OpenCV' },
+    { icon: Database, name: 'Databases', description: 'MySQL, Oracle' },
+    { icon: Smartphone, name: 'Developer Tools', description: 'Git, GitHub, VS Code' },
   ];
 
   const containerVariants = {

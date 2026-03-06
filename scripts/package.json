@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-scripts",
+  "version": "1.0.0",
+  "description": "Helper scripts for running portfolio frontend and backend",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ..",
+    "dev:frontend": "cd .. && npm run dev",
+    "dev:backend": "cd server && npm run dev",
+    "start:backend": "cd server && npm start"
+  }
+}

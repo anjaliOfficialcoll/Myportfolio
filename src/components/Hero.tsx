@@ -1,17 +1,9 @@
 import React from 'react';
-import { Github, Linkedin, X, Youtube, Instagram, Download } from 'lucide-react';
+import { Download } from 'lucide-react';
 import { motion } from 'framer-motion';
 import laptopImg from '../../images/laptopimg.avif';
 
 const Hero: React.FC = () => {
-  const social = [
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/anjali-kumari-6b2742281/', label: 'LinkedIn' },
-    { icon: Github, href: 'https://github.com/anjaliOfficialcoll', label: 'GitHub' },
-    { icon: X, href: 'https://x.com/anjaliTwit00', label: 'X' },
-    { icon: Youtube, href: '#', label: 'YouTube' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-  ];
-
   return (
   <div id="home" className="min-h-screen flex items-center bg-[#F5EFE7]">
 
@@ -42,7 +34,7 @@ const Hero: React.FC = () => {
             {/* Resume button — opens Google Drive link in a new tab */}
             <div className="flex items-center gap-4">
               <a
-                href="https://drive.google.com/file/d/1C2qG9x5Y702ZKpwtRdiwC5DYNffr_ux_/view?usp=sharing"
+                href="https://drive.google.com/file/d/1_v9pshS7lC9cMcmRyWV2RfUNa_gz6Ylw/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#1F1F1F] text-[#F5EFE7] px-5 py-3 rounded-full font-semibold shadow hover:bg-[#2a2a2a] transition-colors"
