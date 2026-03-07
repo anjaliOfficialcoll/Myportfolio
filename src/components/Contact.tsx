@@ -28,26 +28,32 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      // FormSpree endpoint - get your own at formspree.io
-      const formspreeEndpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT || 'https://formspree.io/f/YOUR_FORM_ID';
-      
-      const response = await fetch(formspreeEndpoint, {
+      const response = await fetch('https://formsubmit.co/ajax/anjalikumari24732@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          _subject: `Portfolio Contact: ${formData.subject}`,
+        }),
       });
 
-      if (response.ok) {
+      const result = await response.json();
+
+      if (result.success === 'true' || result.success === true) {
         setFormData({ name: '', email: '', subject: '', message: '' });
         alert('Message sent successfully! I will get back to you soon.');
       } else {
-        alert('Failed to send message. Please try again or email me directly.');
+        alert('Failed to send message. Please try again or email me directly at anjalikumari24732@gmail.com');
       }
     } catch (error) {
       console.error('Error sending message:', error);
-      alert('Failed to send message. Please try again or email me directly.');
+      alert('Failed to send message. Please try again or email me directly at anjalikumari24732@gmail.com');
     } finally {
       setIsSubmitting(false);
     }
