@@ -1,15 +1,18 @@
-# Dynamic Portfolio
+# Anjali Kumari — Portfolio
 
-A modern, dynamic portfolio website with an admin panel for managing projects. Built with React, TypeScript, Node.js, Express, and MongoDB.
+A modern, dynamic personal portfolio website with a full-stack admin panel for managing projects. Built with React, TypeScript, Node.js, Express, and MongoDB.
+
+🔗 **Live:** [myportfolio-anjali.vercel.app](https://myportfolio-anjali.vercel.app) &nbsp;|&nbsp; **Repo:** [github.com/anjaliOfficialcoll/Myportfolio](https://github.com/anjaliOfficialcoll/Myportfolio)
 
 ## Features
 
-- 🎨 Modern and responsive design
-- 🔐 Secure admin authentication
+- 🎨 Modern and responsive design with smooth animations
+- 🔐 Secure JWT-based admin authentication
 - ✏️ Add, edit, and delete projects from the admin panel
 - 🚀 Real-time updates without redeployment
 - 📱 Mobile-friendly interface
-- ⚡ Fast and optimized performance
+- ⚡ Fast and optimized with Vite
+- 🛡️ Fallback static data if backend is unavailable
 
 ## Tech Stack
 
@@ -39,8 +42,8 @@ A modern, dynamic portfolio website with an admin panel for managing projects. B
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
-   cd portfolio_ak
+   git clone https://github.com/anjaliOfficialcoll/Myportfolio.git
+   cd Myportfolio
    ```
 
 2. **Install Frontend Dependencies**
@@ -145,16 +148,23 @@ In the admin panel, you can add projects with:
 
 4. Configure rewrites for SPA routing:
    
-   **Netlify (_redirects file in public folder):**
-   ```
-   /*    /index.html   200
-   ```
-
-   **Vercel (vercel.json):**
+   **Vercel (vercel.json — already included):**
    ```json
    {
-     "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+     "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
    }
+   ```
+
+   **Netlify (netlify.toml — already included):**
+   ```toml
+   [build]
+     command = "npm run build"
+     publish = "dist"
+
+   [[redirects]]
+     from   = "/*"
+     to     = "/index.html"
+     status = 200
    ```
 
 ### Backend (Render/Railway/Heroku)
@@ -192,5 +202,5 @@ MIT
 
 ## Contact
 
-Your Name - [Your Email]
-Project Link: [Your GitHub Repository]
+Anjali Kumari — [anjaliOfficialcoll](https://github.com/anjaliOfficialcoll)  
+Project: [github.com/anjaliOfficialcoll/Myportfolio](https://github.com/anjaliOfficialcoll/Myportfolio)
