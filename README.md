@@ -2,7 +2,7 @@
 
 A modern, dynamic personal portfolio website with a full-stack admin panel for managing projects. Built with React, TypeScript, Node.js, Express, and MongoDB.
 
-🔗 **Live:** [myportfolio-anjali.vercel.app](https://myportfolio-anjali.vercel.app) &nbsp;|&nbsp; **Repo:** [github.com/anjaliOfficialcoll/Myportfolio](https://github.com/anjaliOfficialcoll/Myportfolio)
+🔗 **Live:** [myportfoliodeploy-beige.vercel.app](https://myportfoliodeploy-beige.vercel.app) &nbsp;|&nbsp; **Repo:** [github.com/anjaliOfficialcoll/Myportfolio](https://github.com/anjaliOfficialcoll/Myportfolio)
 
 ## Features
 
